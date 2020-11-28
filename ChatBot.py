@@ -1,0 +1,78 @@
+# importing dependencies
+from chatterbot import ChatBot
+from chatterbot.response_selection import get_random_response
+import logging
+import sys
+import os
+import datetime
+
+#trainner
+def train (datafolder="", train_corpus = True):
+    # Enable info level logging
+    logging.basicConfig(level=logging.INFO)
+
+    chatbot = ChatBot(
+        'Chatting Bot',
+        trainer='chatterbot.trainers.ChatterBotCorpusTrainer'
+    )
+
+    # Start by training our bot with the custom data(if present) or else with custom data
+    if (not datafolder == ""):
+        chatbot.train(
+            datafolder
+        )
+    if (train_corpus == True):
+        #Start by training our bot with the ChatterBot corpus data
+        chatbot.train(
+            'chatterbot.corpus.english'
+        )
+    # Now we can export the data to a file
+    #chatbot.trainer.export_for_training('./my_export.json')
+
+
+#getting a reply
+def botreply (messagein, db_location = "db.sqlite3"):
+    
+    #checking if the model exsists
+    if not os.path.exists(db_location):
+        error = "ERROR IN REPLYING \n"
+        error = error + "Model doesnot exsist at " + db_location + "\n"
+        error = str(datetime.datetime.now()) + "\n" + error + "\n"
+        print (error)
+        return ("Sorry! I am resting right now. Please come back later")
+
+
+    # Enable info level logging
+    logging.basicConfig(level=logging.INFO)
+
+    #creating BOT
+    chatbot = ChatBot (
+        'Chatting Bot',
+        logic_adapters=[
+            {
+                'import_path': 'chatterbot.logic.BestMatch'
+            },
+            {
+                'import_path': 'chatterbot.logic.SpecificResponseAdapter',
+                'input_text': 'Help me!',
+                'output_text': 'gửi mail tại địa chỉ này: vuhoangphong.cntt@gmail.com'
+            },
+            {
+                'import_path': 'chatterbot.logic.LowConfidenceAdapter',
+                'threshold': 0.65,
+                'default_response': 'Xin Lỗi, Tôi Không Hiểu, Tôi Đang Trong Quá Trình Học Hỏi !'
+            }
+        ],
+        database = db_location,
+        response_selection_method=get_random_response,
+        read_only=True)
+
+
+    # Now let's get a response
+    message = messagein
+    reply = chatbot.get_response(message)
+    response = str(reply)
+    print ('YOU (Input):'+'\t', message)
+    print ('BOT:'+ '\t\t', response)
+    print ("\n")
+    return response
