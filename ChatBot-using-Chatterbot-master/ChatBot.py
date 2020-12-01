@@ -55,12 +55,12 @@ def botreply (messagein, db_location = "db.sqlite3"):
             {
                 'import_path': 'chatterbot.logic.SpecificResponseAdapter',
                 'input_text': 'Help me!',
-                'output_text': 'mail your quey here: singhsidhukuldeep@gmail.com'
+                'output_text': 'liên hệ email: vuhoangphong.cntt@gmail.com'
             },
             {
                 'import_path': 'chatterbot.logic.LowConfidenceAdapter',
                 'threshold': 0.65,
-                'default_response': 'I am sorry, but I do not understand.'
+                'default_response': 'Xin Lỗi, Tôi Không Hiểu !'
             }
         ],
         database = db_location,
