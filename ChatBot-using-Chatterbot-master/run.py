@@ -3,7 +3,7 @@ import ChatBot
 
 # Now let's get a response to a greeting
 while True:
-    message = input('\x1b[1;34;44m' + 'Hỏi Bot:' + '\x1b[0m' + '\t')
+    message = input('\x1b[1;34;44m' + 'Ask Bot:' + '\x1b[0m' + '\t')
     if (message.strip().lower() == "bye"):
         print('\x1b[1;31;41m' + 'ENDING' + '\x1b[0m')
         break

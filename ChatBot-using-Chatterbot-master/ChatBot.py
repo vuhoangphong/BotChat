@@ -55,12 +55,12 @@ def botreply (messagein, db_location = "db.sqlite3"):
             {
                 'import_path': 'chatterbot.logic.SpecificResponseAdapter',
                 'input_text': 'Help me!',
-                'output_text': 'gửi mail tại địa chỉ này: vuhoangphong.cntt@gmail.com'
+                'output_text': 'mail your quey here: singhsidhukuldeep@gmail.com'
             },
             {
                 'import_path': 'chatterbot.logic.LowConfidenceAdapter',
                 'threshold': 0.65,
-                'default_response': 'Xin Lỗi, Tôi Không Hiểu, Tôi Đang Trong Quá Trình Học Hỏi !'
+                'default_response': 'I am sorry, but I do not understand.'
             }
         ],
         database = db_location,
@@ -68,11 +68,11 @@ def botreply (messagein, db_location = "db.sqlite3"):
         read_only=True)
 
 
-    # Now let's get a response
+    # Now let's get a response to a greeting
     message = messagein
     reply = chatbot.get_response(message)
     response = str(reply)
-    print ('YOU (Input):'+'\t', message)
-    print ('BOT:'+ '\t\t', response)
+    print ('\x1b[1;36;46m' + 'YOU (Input):' + '\x1b[0m' + '\t', message)
+    print ('\x1b[1;33;43m' + 'BOT:' + '\x1b[0m' + '\t\t', response)
     print ("\n")
     return response
