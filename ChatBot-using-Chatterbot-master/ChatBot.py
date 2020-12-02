@@ -72,7 +72,5 @@ def botreply (messagein, db_location = "db.sqlite3"):
     message = messagein
     reply = chatbot.get_response(message)
     response = str(reply)
-    print ('\x1b[1;36;46m' + 'YOU (Input):' + '\x1b[0m' + '\t', message)
-    print ('\x1b[1;33;43m' + 'BOT:' + '\x1b[0m' + '\t\t', response)
-    print ("\n")
+    
     return response
