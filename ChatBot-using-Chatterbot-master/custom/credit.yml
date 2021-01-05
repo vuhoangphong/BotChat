@@ -18,9 +18,9 @@ conversations:
 - - help me
   - Tôi Chỉ Là Bot Tôi Không Thể Giúp Được Gì
 - - chào buổi sáng
-  - Buồi Sáng Tốt Lành  
+  - Buổi Sáng Tốt Lành  
 - - chao buoi sang
-  - Buồi Sáng Tốt Lành    
+  - Buổi Sáng Tốt Lành    
 - - chào buổi trưa
   - Bạn Đã Ăn Cơm Chưa 
 - - chao buoi trua
@@ -36,4 +36,74 @@ conversations:
 - - tra cứu giáo viên
   - Vui Lòng Truy Cập Vào Mục Xem Giáo Viên Dạy   
 - - thông tin cá nhân
-  - Vào Trang Thông Tin Cá Nhân Để Sửa        
+  - Vào Trang Thông Tin Cá Nhân Để Sửa
+- - Làm sao để đổi học sinh
+  - Bạn truy cập vào icon phía trên góc phải nhé
+- - Làm sao để quay lại màn hình chính
+  - Bạn có thể nhấn vào icon logo nha
+- - xin phép nghỉ học 
+  - bạn có thể truy cập vào mục xin phép hoặc vào link này http://solienlac-us.tk/XinPhep1/XinPhep
+- - nghi hoc
+  - bạn có thể truy cập vào mục xin phép hoặc vào link này http://solienlac-us.tk/XinPhep1/XinPhep
+- - Ngày nghỉ
+  - Các thông báo về ngày nghỉ sẽ được thông báo ở mục thông báo
+- - ngay nghi
+  - Các thông báo về ngày nghỉ sẽ được thông báo ở mục thông báo
+- - thông báo cá nhân
+  - Bạn hãy vào mục thông báo của web
+- - có mấy loại thông báo 
+  - Nhà trường hiện đang có 3 loại thông báo nha
+- - Tôi muốn xem thông tin giáo viên
+  - Bạn có thể truy cập vào mục thông tin giáo viên 
+- - liên hệ
+  - Thông tin có trên web bạn có thể liên lạc
+- - Đóng học phí online
+  - Bạn có thể truy cập vào mục đóng học phí
+- - Bạn bao nhiêu tuổi
+  - Xin lỗi tôi chỉ là Bot
+- - Bạn Gái
+  - Haha, Xin lỗi tôi chỉ là Bot
+- - App so lien lac
+  - Hệ thống sổ liên lạc gồm web và app
+- - Hệ thống này làm gì
+  - Hệ thống sẽ cung cấp thông tin về học tập cho phụ huynh
+- - Tôi muốn sửa thông tin cá nhân
+  - Truy cập vào mục thông tin cá nhân
+- - thong tin ca nhan
+  - Truy cập vào mục thông tin cá nhân
+- - Thành viên làm đồ án này
+  - Gồm 3 người thôi ạ
+- - Tôi không thể thay đổi thông tin cá nhân
+  - Bạn nên liên hệ theo địa chỉ trên web để được hỗ trợ
+- - con tôi học có giỏi không
+  - Bạn có thể liên lạc giáo viên để biết
+- - con tôi có quậy không
+  - Bạn có thể liên lạc giáo viên để biết
+- - con tôi tên gì
+  - bạn có thể truy cập vào mục menu để thông tin ạ
+- - không thấy thông báo 
+  - Có thể vẫn chưa có thông báo 
+- - khong thay thong bao
+  - Có thể vẫn chưa có thông báo
+- - thong bao
+  - Bạn có thể truy cập vào mục thông báo
+- - BHYT
+  - Hệ thống sẻ mở đăng ký khi tới thời gian
+- - Bảo Hiểm Y Tế
+  - Hệ thống sẻ mở đăng ký khi tới thời gian
+- - Cho con nghỉ học
+  - Bạn nên liên hệ ban giám hiệu để làm thủ tục
+- - gửi xe
+  - liên hệ nhà trường để biết thêm thông tin
+- - con tôi
+  - Bạn muốn biết thông tin gì
+- - Hội phụ huynh
+  - Liên hệ giáo viên chủ nhiệm để biết thêm thông tin
+- - lễ hội
+  - Nhà trường sẽ có thông báo về lễ hội
+- - chào cờ
+  - Vào ngày sáng thứ 2 hàng tuần
+- - Khi nào là cuối tuần
+  - Thứ 7 CN ạ
+- - Ngày Mấy Nghỉ Tết
+  - Nhà trường sẽ có thông báo về lịch nghỉ       
